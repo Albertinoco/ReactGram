@@ -1,0 +1,27 @@
+.like {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.like svg {
+  font-size: 1.3rem;
+  color: #e1306c;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.like svg:hover {
+  transform: scale(1.1);
+  color: #c2185b;
+}
+
+.like p {
+  margin: 0;
+  font-weight: 600;
+}

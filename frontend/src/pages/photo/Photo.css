@@ -1,0 +1,73 @@
+#photo {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+#photo > * {
+  width: 100%;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1rem;
+  border-radius: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.comments h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1rem;
+}
+
+.comments form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.comments input {
+  width: 100%;
+  padding: 0.8rem 0.95rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.comments input:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.15);
+}
+
+.comments button {
+  align-self: flex-start;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ec4899, #f59e0b);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comments button:hover {
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  #photo {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}

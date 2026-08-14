@@ -1,0 +1,54 @@
+/* PhotoItem styles: card, image, title and author link */
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1px solid rgba(251, 113, 133, 0.16);
+  background: rgba(31, 18, 42, 0.76);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.photo-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 80px rgba(243, 114, 116, 0.12);
+}
+
+.photo-item img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.photo-item h2 {
+  margin: 0.75rem 0.75rem 0.25rem;
+  color: #f8fafc;
+  font-size: 1rem;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.photo-item .photo-author {
+  margin: 0 0.75rem 1rem;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.photo-item .photo-author a {
+  color: #f59e0b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .photo-item img {
+    height: 180px;
+  }
+
+  .photo-item h2 {
+    font-size: 0.95rem;
+  }
+}
